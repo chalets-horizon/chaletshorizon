@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://chalets-horizon.github.io/chaletshorizon/sitemap.xml
