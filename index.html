@@ -3,8 +3,65 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Chalets Horizon – Hébergements de charme en Isère</title>
-<meta name="description" content="Chalets Horizon : 3 hébergements authentiques en Isère. Chalet sur l'étang, Tiny House et Chalet avec terrasse perchée. Réservation directe sans commission.">
+<title>Chalets Horizon – Hébergements insolites Vercors & Royans | Isère</title>
+<meta name="description" content="Trois hébergements insolites à Saint-Just-de-Claix en Isère : chalet sur l'étang, tiny house avec îlot privatif, chalet avec terrasse perchée. Réservation directe, sans commission.">
+
+  <!-- Open Graph -->
+  <meta property="og:site_name" content="Chalets Horizon">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:type" content="website">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@chaletshorizon">
+
+  <!-- Données techniques -->
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Chalets Horizon">
+  <meta name="geo.region" content="FR-38">
+  <meta name="geo.placename" content="Saint-Just-de-Claix, Isère">
+
+  <!-- Open Graph spécifique -->
+  <meta property="og:title" content="Chalets Horizon – Hébergements insolites Vercors & Royans | Isère">
+  <meta property="og:description" content="Trois hébergements insolites à Saint-Just-de-Claix en Isère : chalet sur l'étang, tiny house avec îlot privatif, chalet avec terrasse perchée. Réservation directe, sans commission.">
+  <meta property="og:url" content="https://chalets-horizon.github.io/chaletshorizon/">
+  <meta property="og:image" content="https://chalets-horizon.github.io/chaletshorizon/chalet-etang.png">
+  <meta name="twitter:title" content="Chalets Horizon – Hébergements insolites Vercors & Royans | Isère">
+  <meta name="twitter:description" content="Trois hébergements insolites à Saint-Just-de-Claix en Isère : chalet sur l'étang, tiny house avec îlot privatif, chalet avec terrasse perchée. Réservation directe, sans commission.">
+  <meta name="twitter:image" content="https://chalets-horizon.github.io/chaletshorizon/chalet-etang.png">
+
+  <!-- Schema.org JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LodgingBusiness",
+    "name": "Chalets Horizon",
+    "description": "Trois hébergements insolites en Isère entre Vercors et Royans. Chalet sur l'étang, Tiny House avec îlot privatif, Chalet avec terrasse perchée dans les arbres.",
+    "url": "https://chalets-horizon.github.io/chaletshorizon/",
+    "telephone": "+33676609503",
+    "email": "contact@chalets-horizon.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "851 Route de la Sone",
+      "addressLocality": "Saint-Just-de-Claix",
+      "postalCode": "38680",
+      "addressCountry": "FR"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "45.097",
+      "longitude": "5.385"
+    },
+    "priceRange": "€€",
+    "numberOfRooms": 3,
+    "petsAllowed": true,
+    "amenityFeature": [
+      {"@type": "LocationFeatureSpecification", "name": "Cuisine équipée", "value": true},
+      {"@type": "LocationFeatureSpecification", "name": "Linge de lit et de bain fournis", "value": true},
+      {"@type": "LocationFeatureSpecification", "name": "Animaux acceptés", "value": true}
+    ]
+  }
+  </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600;700&family=Comfortaa:wght@400;700&display=swap" rel="stylesheet">
@@ -59,6 +116,14 @@ section{padding:6rem 5rem;}
 .br{display:block;text-align:center;background:var(--vert);color:var(--blanc);padding:.82rem;font-family:'Josefin Sans',sans-serif;font-size:.75rem;font-weight:700;letter-spacing:.15em;text-transform:uppercase;text-decoration:none;border-radius:2px;transition:background .2s;}
 .br:hover{background:var(--vert-m);}
 .sec-r{background:var(--blanc);}
+.resa-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2rem;}
+.resa-card{border-radius:3px;overflow:hidden;max-height:480px;}
+.resa-card-header{padding:1.5rem 1.5rem 1rem;background:var(--vert);}
+.resa-tag{font-size:.62rem;letter-spacing:.15em;text-transform:uppercase;font-weight:700;color:var(--vert-c);background:rgba(164,255,187,.15);padding:.3rem .7rem;border-radius:2px;display:inline-block;margin-bottom:.75rem;}
+.resa-titre{font-family:'Comfortaa',sans-serif;font-size:1.1rem;font-weight:700;color:var(--blanc);margin-bottom:.3rem;}
+.resa-sub{font-size:.75rem;color:rgba(255,255,255,.6);letter-spacing:.04em;}
+@media(max-width:1100px){.resa-grid{grid-template-columns:1fr;}}
+
 .ri{max-width:1100px;margin:0 auto;}
 .rh{text-align:center;margin-bottom:3rem;}
 .rh p{margin-top:1rem;color:var(--texte-d);font-size:.9rem;max-width:460px;margin-left:auto;margin-right:auto;line-height:1.75;}
@@ -74,6 +139,26 @@ section{padding:6rem 5rem;}
 .ati{font-family:'Comfortaa',sans-serif;font-size:.93rem;font-weight:700;color:var(--blanc);margin-bottom:.3rem;}
 .ade{font-size:.81rem;color:rgba(255,255,255,.55);line-height:1.6;}
 .sec-t{background:var(--creme);}
+.terr-cats{display:grid;grid-template-columns:repeat(3,1fr);gap:1.75rem;}
+.terr-cat{background:var(--blanc);border-radius:3px;padding:1.75rem;border:1px solid rgba(0,73,53,.08);}
+.terr-cat-icon{font-size:1.75rem;margin-bottom:.75rem;}
+.terr-cat-titre{font-family:'Comfortaa',sans-serif;font-size:1rem;font-weight:700;color:var(--vert);margin-bottom:1rem;padding-bottom:.6rem;border-bottom:2px solid var(--vert-c);}
+.terr-list{list-style:none;display:flex;flex-direction:column;gap:.6rem;}
+.terr-list li{font-size:.82rem;color:var(--texte-d);line-height:1.6;padding-left:.75rem;position:relative;}
+.terr-list li::before{content:'–';position:absolute;left:0;color:var(--vert-m);}
+@media(max-width:1100px){.terr-cats{grid-template-columns:1fr 1fr;}}
+@media(max-width:768px){.terr-cats{grid-template-columns:1fr;}}
+
+.terr-cats{display:grid;grid-template-columns:repeat(2,1fr);gap:2rem;}
+.terr-cat{background:var(--blanc);border-radius:3px;padding:2rem;border:1px solid rgba(0,73,53,.08);}
+.terr-cat-head{display:flex;align-items:center;gap:.75rem;margin-bottom:1.25rem;padding-bottom:1rem;border-bottom:2px solid var(--vert-c);}
+.terr-ico{font-size:1.4rem;}
+.terr-cat-titre{font-family:'Comfortaa',sans-serif;font-size:1.1rem;font-weight:700;color:var(--vert);}
+.terr-list{list-style:none;display:flex;flex-direction:column;gap:.65rem;}
+.terr-list li{font-size:.83rem;color:var(--texte-d);line-height:1.6;padding-left:.75rem;border-left:2px solid var(--vert-c);}
+.terr-list li strong{color:var(--vert);font-weight:700;}
+@media(max-width:1024px){.terr-cats{grid-template-columns:1fr;}}
+
 .tg{display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:center;max-width:1100px;margin:0 auto;}
 .tt{font-size:.94rem;color:var(--texte-d);line-height:1.8;margin-top:1.2rem;}
 .dts{display:flex;gap:.6rem;flex-wrap:wrap;margin-top:2rem;}
@@ -126,8 +211,8 @@ footer{background:var(--texte);padding:2.5rem 5rem;display:flex;align-items:cent
 <section class="hero">
   <div class="hl">
     <p class="eyebrow">Isère · Savoie · Haute-Savoie</p>
-    <h1>L'authenticité de la <em>nature alpine</em>, à votre rythme.</h1>
-    <p>Trois hébergements uniques nichés dans un écrin de verdure en Isère. Réservez en direct, au meilleur tarif.</p>
+    <h1>L'authenticité de la <em>nature entre Vercors et Royans</em>, à votre rythme.</h1>
+    <p>Trois hébergements insolites nichés dans la nature iséroise, à Saint-Just-de-Claix. Pour deux, en amoureux ou entre amis — loin du bruit, proches de l'essentiel.</p>
     <div class="hprops">
       <span class="hprop"><span class="pd"></span>Chalet sur l'étang</span>
       <span class="hprop"><span class="pd"></span>Tiny House</span>
@@ -150,8 +235,8 @@ footer{background:var(--texte);padding:2.5rem 5rem;display:flex;align-items:cent
       <div class="ci"><img src="chalet-etang.png" alt="Chalet sur l'étang" style="width:100%;height:100%;object-fit:cover;transition:transform .5s;"><span class="ct">Coup de cœur</span></div>
       <div class="cb">
         <h3 class="cn">Chalet sur l'étang</h3>
-        <p class="cd">Posé au bord de l'eau, ce chalet offre une immersion totale dans la nature. Réveillez-vous au son des oiseaux, les yeux sur l'étang.</p>
-        <div class="cf"><span class="ft">Vue sur étang</span><span class="ft">Terrasse</span><span class="ft">Coin feu</span></div>
+        <p class="cd">Posé au bord de l'étang, ce chalet de 20 m² vous plonge dans un écrin de nature. Terrasse privative, vue sur l'eau, plancha — tout pour une parenthèse ressourçante à deux.</p>
+        <div class="cf"><span class="ft">Vue sur étang</span><span class="ft">Plancha</span><span class="ft">Cuisine équipée</span></div>
         <a href="chalet-etang.html" class="br">Voir ce chalet →</a>
       </div>
     </div>
@@ -159,8 +244,8 @@ footer{background:var(--texte);padding:2.5rem 5rem;display:flex;align-items:cent
       <div class="ci"><img src="tiny-house.png" alt="Tiny House" style="width:100%;height:100%;object-fit:cover;transition:transform .5s;"><span class="ct">Insolite</span></div>
       <div class="cb">
         <h3 class="cn">Tiny House</h3>
-        <p class="cd">L'art du minimalisme au cœur des bois. Chaque centimètre pensé pour votre confort. Une parenthèse d'essentiel dans un écrin de verdure.</p>
-        <div class="cf"><span class="ft">Micro-maison</span><span class="ft">Jardin privatif</span><span class="ft">Éco-conçue</span></div>
+        <p class="cd">Cette tiny house de 15 m² combine design contemporain et nature à portée de main. Son atout secret : un îlot détente accessible par un ponton en bois, plancha incluse.</p>
+        <div class="cf"><span class="ft">Îlot détente & ponton</span><span class="ft">Plancha</span><span class="ft">Cuisine équipée</span></div>
         <a href="tiny-house.html" class="br">Voir la Tiny House →</a>
       </div>
     </div>
@@ -168,8 +253,8 @@ footer{background:var(--texte);padding:2.5rem 5rem;display:flex;align-items:cent
       <div class="ci"><img src="chalet-terrasse.png" alt="Chalet terrasse perchée" style="width:100%;height:100%;object-fit:cover;transition:transform .5s;"><span class="ct">Vue exceptionnelle</span></div>
       <div class="cb">
         <h3 class="cn">Chalet terrasse perchée</h3>
-        <p class="cd">Une terrasse suspendue dans les arbres pour des soirées au-dessus du monde. Le chalet alpin revisité avec une poésie forestière.</p>
-        <div class="cf"><span class="ft">Terrasse dans les arbres</span><span class="ft">Vue dégagée</span><span class="ft">Bois locaux</span></div>
+        <p class="cd">Ce chalet de 20 m² dissimule une terrasse perchée dans les arbres, accessible par un escalier en bois. Barbecue, nature environnante et vue sur la canopée — une expérience hors du commun.</p>
+        <div class="cf"><span class="ft">Terrasse perchée</span><span class="ft">Barbecue</span><span class="ft">Cuisine équipée</span></div>
         <a href="chalet-terrasse.html" class="br">Voir ce chalet →</a>
       </div>
     </div>
@@ -182,13 +267,34 @@ footer{background:var(--texte);padding:2.5rem 5rem;display:flex;align-items:cent
       <p class="se">Réservation directe</p>
       <h2 class="st">Vérifiez les disponibilités</h2>
       <p>Réservez directement — aucune commission, paiement sécurisé, confirmation instantanée.</p>
+      <p style="margin-top:.5rem;font-size:.78rem;color:var(--texte-d);">2 adultes max · Animaux acceptés (frais supplémentaires) · Pas d'enfants</p>
     </div>
-    <div class="rf">
-      <iframe id="bookingengine" allowfullscreen=""
-        src="https://app.superhote.com/#/get-available-rentals/KB1CyJVd3blzM5If7opM0UWyz"
-        style="display:block;width:100%;border:none;" height="4500" frameborder="0" scrolling="no"
-        sandbox="allow-scripts allow-forms allow-same-origin allow-presentation allow-top-navigation">
-      </iframe>
+    <div class="resa-grid">
+
+      <div class="resa-card">
+        <iframe allowfullscreen=""
+          src="https://app.superhote.com/#/rental/propertyKeyEqxGaNQ8YQDPP43X2vuc4Sgv3"
+          style="display:block;width:100%;border:none;" height="480" frameborder="0" scrolling="no"
+          sandbox="allow-scripts allow-forms allow-same-origin allow-presentation allow-top-navigation">
+        </iframe>
+      </div>
+
+      <div class="resa-card">
+        <iframe allowfullscreen=""
+          src="https://app.superhote.com/#/rental/propertyKey8RsgIWImBcsOKD91W8hRntIjw"
+          style="display:block;width:100%;border:none;" height="480" frameborder="0" scrolling="no"
+          sandbox="allow-scripts allow-forms allow-same-origin allow-presentation allow-top-navigation">
+        </iframe>
+      </div>
+
+      <div class="resa-card">
+        <iframe allowfullscreen=""
+          src="https://app.superhote.com/#/rental/propertyKeyyxQS8fom3yo8DCKryzNEmaBpF"
+          style="display:block;width:100%;border:none;" height="480" frameborder="0" scrolling="no"
+          sandbox="allow-scripts allow-forms allow-same-origin allow-presentation allow-top-navigation">
+        </iframe>
+      </div>
+
     </div>
   </div>
 </section>
@@ -198,7 +304,7 @@ footer{background:var(--texte);padding:2.5rem 5rem;display:flex;align-items:cent
     <div>
       <p class="eyebrow">Réservation directe</p>
       <h2 class="pt">Pourquoi réserver<br>chez nous ?</h2>
-      <p class="ps">En réservant directement, vous échangez avec les propriétaires, bénéficiez des meilleurs tarifs et soutenez un projet local ancré dans le territoire.</p>
+      <p class="ps">En réservant directement sur notre site, vous échangez avec le propriétaire, obtenez les meilleurs tarifs et soutenez un projet local ancré dans la nature iséroise.</p>
     </div>
     <ul class="al">
       <li class="ai"><div class="aico"><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div><div><p class="ati">Meilleurs tarifs garantis</p><p class="ade">Sans commission plateforme — le prix le plus bas, directement chez nous.</p></div></li>
@@ -210,19 +316,86 @@ footer{background:var(--texte);padding:2.5rem 5rem;display:flex;align-items:cent
 </section>
 
 <section class="sec-t" id="territoire">
-  <div class="tg">
-    <div>
+  <div style="max-width:1100px;margin:0 auto;">
+    <div style="text-align:center;margin-bottom:3.5rem;">
       <p class="se">Le territoire</p>
-      <h2 class="st">L'Isère et ses trésors naturels.</h2>
-      <p class="tt">Nichés au cœur de l'Isère, nos hébergements vous donnent accès à un territoire d'une richesse exceptionnelle : montagnes, lacs, forêts et villages préservés.</p>
-      <p class="tt" style="margin-top:1rem;">Randonnées, vélo, sports nautiques ou simple farniente — la région s'offre à vous selon vos envies.</p>
-      <div class="dts"><span class="dt">Isère (38)</span><span class="dt">Savoie (73)</span><span class="dt">Haute-Savoie (74)</span></div>
+      <h2 class="st">Saint-Just-de-Claix & ses environs</h2>
+      <p style="margin-top:1rem;font-size:.95rem;color:var(--texte-d);max-width:600px;margin-left:auto;margin-right:auto;line-height:1.8;">Niché entre le Vercors et les Chambarans, Saint-Just-de-Claix est une base idéale pour explorer l'Isère et la Drôme — nature sauvage, villages médiévaux, gastronomie locale et activités plein air à portée de route.</p>
     </div>
-    <div class="sb">
-      <div class="stat"><p class="sn">3</p><p class="sl">Hébergements uniques</p></div>
-      <div class="stat"><p class="sn">0%</p><p class="sl">Commission plateforme</p></div>
-      <div class="stat"><p class="sn">4★</p><p class="sl">Note moyenne clients</p></div>
-      <div class="stat"><p class="sn">12</p><p class="sl">Mois d'ouverture</p></div>
+
+    <!-- GRILLE 4 RUBRIQUES -->
+    <div class="terr-cats">
+
+      <div class="terr-cat">
+        <div class="terr-cat-head">
+          <span class="terr-ico">🥾</span>
+          <h3 class="terr-cat-titre">À faire autour</h3>
+        </div>
+        <ul class="terr-list">
+          <li><strong>Randonnée & vélo</strong> — Nombreux sentiers sur le secteur et dans le Vercors (visorando). Location de vélos : Intersport à Chatte.</li>
+          <li><strong>Luge d'été</strong> — Descente sinueuse sur rails à Autrans, sensations garanties.</li>
+          <li><strong>Ski alpin & nordique</strong> — Villard-de-Lans / Corrençon, 110 km de pistes. Ski de fond à Lans-en-Vercors, Font d'Urle, Saint-Nizier.</li>
+          <li><strong>Via Ferrata</strong> — Choranche, Villard-de-Lans, Lans-en-Vercors.</li>
+          <li><strong>Parapente</strong> — École du Vercors, baptêmes et stages.</li>
+          <li><strong>Golf</strong> — Golf de Charmeil à Saint-Quentin-sur-Isère (18 trous, Par 71), 20 min.</li>
+          <li><strong>Patinoire</strong> — Villard-de-Lans ou Grenoble.</li>
+          <li><strong>Walibi, Zoo, Parcs, Musées</strong> — En automobile à proximité.</li>
+        </ul>
+      </div>
+
+      <div class="terr-cat">
+        <div class="terr-cat-head">
+          <span class="terr-ico">🏔️</span>
+          <h3 class="terr-cat-titre">Lieux à visiter</h3>
+        </div>
+        <ul class="terr-list">
+          <li><strong>Le Vercors</strong> — Falaises vertigineuses, plateaux calcaires, Parc Naturel Régional. Randonnée, escalade, spéléologie.</li>
+          <li><strong>Les Chambarans</strong> — 50 000 ha de forêts et collines au cœur du Dauphiné.</li>
+          <li><strong>Lac du Marandan</strong> — Baignade et loisirs en plein air. lacdumrandan.fr</li>
+          <li><strong>Lac de Paladru</strong> — À 1h, l'un des plus grands lacs naturels de France (3,9 km²).</li>
+          <li><strong>Palais du Facteur Cheval</strong> — Chef-d'œuvre d'architecture naïve à Hauterives.</li>
+          <li><strong>Pont-en-Royans</strong> — Maisons suspendues au-dessus de la Bourne.</li>
+          <li><strong>Saint-Antoine-l'Abbaye</strong> — Village médiéval, abbaye remarquable.</li>
+          <li><strong>Routes suspendues du Vercors</strong> — Panoramas spectaculaires sur les vallées.</li>
+          <li><strong>Téléphérique de Grenoble</strong> — Vue panoramique sur la ville et l'Isère.</li>
+          <li><strong>Rivières Drevenne & Vernaison</strong> — Canoë-kayak, VTT, pêche.</li>
+        </ul>
+      </div>
+
+      <div class="terr-cat">
+        <div class="terr-cat-head">
+          <span class="terr-ico">🍽️</span>
+          <h3 class="terr-cat-titre">Où manger</h3>
+        </div>
+        <ul class="terr-list">
+          <li><strong>Le Beale Street</strong> — Saint-Just-de-Claix. Burgers, pizzas, terrasse, concerts.</li>
+          <li><strong>Restaurant Chevallier</strong> — Chevrières. Cuisine authentique, fait maison.</li>
+          <li><strong>La Taverne</strong> — Saint-Jean-en-Royans. Terroir, pizzas, ambiance conviviale.</li>
+          <li><strong>L'Artsolite</strong> — Saint-Jean-en-Royans. Cuisine créative, expositions.</li>
+          <li><strong>Le Castel Fleuri</strong> — Saint-Jean-en-Royans. Cuisine française raffinée.</li>
+          <li><strong>Le Chat Vert</strong> — Hostun. Convivialité et bonne cuisine de village.</li>
+          <li><strong>La Tivolière</strong> — Saint-Marcellin. Cadre élégant, soirées romantiques.</li>
+          <li><strong>Les Carmes</strong> — Beauvoir-en-Royans. Bistronomie dans un couvent médiéval.</li>
+          <li><strong>Le Belier Rouge</strong> — Saint-Antoine-l'Abbaye. Viandes artisanales locales.</li>
+          <li><strong>Gastronomique</strong> — Maison PIC à Valence, Les Cèdres à Grange-les-Beaumont.</li>
+        </ul>
+      </div>
+
+      <div class="terr-cat">
+        <div class="terr-cat-head">
+          <span class="terr-ico">🛒</span>
+          <h3 class="terr-cat-titre">Commerces de proximité</h3>
+        </div>
+        <ul class="terr-list">
+          <li><strong>Saint-Just-de-Claix</strong> — Un brin de Vercors (producteurs locaux), Colruyt.</li>
+          <li><strong>Saint-Marcellin</strong> — Lidl, Colruyt. Boulangerie Le Fournil de Nathalie, La pause gourmande du Royans.</li>
+          <li><strong>Saint-Jean-en-Royans</strong> — Intermarché.</li>
+          <li><strong>Chatte</strong> — Vival, Leclerc, Biocoop, Aldi, Provenc'hall, Le Palais Fermier.</li>
+          <li><strong>Saint-Sauveur</strong> — Intermarché, Fromagerie Rochas.</li>
+          <li><strong>Bars</strong> — Beale Street (St-Just), Beer and Cheese, O Plan, À l'endroit à l'envers (Chatte).</li>
+        </ul>
+      </div>
+
     </div>
   </div>
 </section>
@@ -234,8 +407,10 @@ footer{background:var(--texte);padding:2.5rem 5rem;display:flex;align-items:cent
       <h2 class="st">Une question ?<br>On vous répond.</h2>
       <p class="ctx">Vous souhaitez en savoir plus sur nos hébergements, organiser un séjour sur mesure ou simplement échanger ? N'hésitez pas.</p>
       <div class="cls">
+        <a href="tel:+33676609503" class="cl"><span class="cdot"></span>06 76 60 95 03</a>
         <a href="mailto:contact@chalets-horizon.com" class="cl"><span class="cdot"></span>contact@chalets-horizon.com</a>
         <a href="https://www.chaletshorizon.com" class="cl"><span class="cdot"></span>www.chaletshorizon.com</a>
+        <a href="#hebergements" class="cl"><span class="cdot"></span>Saint-Just-de-Claix, Isère (38)</a>
         <a href="#reservation" class="cl"><span class="cdot"></span>Réserver en direct →</a>
       </div>
     </div>
@@ -251,7 +426,7 @@ footer{background:var(--texte);padding:2.5rem 5rem;display:flex;align-items:cent
 
 <footer>
   <span class="fl">Chalets Horizon</span>
-  <span class="fc">© 2025 Chalets Horizon – SAS Chalets Horizon, L'Albenc, Isère</span>
+  <span class="fc">© 2025 Chalets Horizon – Saint-Just-de-Claix, Isère (38)</span>
   <div class="fls"><a href="#">Mentions légales</a><a href="#">CGV</a><a href="#">Confidentialité</a></div>
 </footer>
 
